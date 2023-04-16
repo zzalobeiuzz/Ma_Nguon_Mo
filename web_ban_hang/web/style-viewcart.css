@@ -1,0 +1,90 @@
+* {
+  margin: 20px 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+.boxcenter {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  margin-bottom: 5px;
+}
+table {
+  width: 70%;
+  margin: auto;
+  border: 2px solid;
+  font-size: 18px;
+}
+h1 {
+  font-size: 30px;
+}
+th {
+  height: 100px;
+  font-weight: bold;
+  padding: 0 30px;
+  background-color: aqua;
+  border: 2px solid;
+}
+td {
+  border-bottom: 2px solid black;
+}
+.id {
+  font-weight: bold;
+}
+.ma-sp {
+  color: red;
+}
+.gia{
+  width: 120px;
+}
+.sl{
+  width: 30px;
+}
+.tong {
+  width: 70%;
+  margin: auto;
+  font-size: 18px;
+  background-color: rgb(221, 247, 174);
+  height: 40px;
+  font-weight: bold;
+}
+.tong-don {
+  margin: 10px 10px;
+  float: left;
+}
+.tong-thanh-tien {
+  margin: 10px 30px;
+  padding-right: 90px;
+  float: right;
+}
+.tong-sl {
+  font-size: 30px;
+  padding-left: 585px;
+  padding-top: 10px;
+}
+.del {
+  color: rgb(4, 139, 98);
+  text-decoration: none;
+}
+.thao-tac {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 250px;
+  font-size: 18px;
+  font-weight: bold;
+}
+li {
+  padding: 0 20px;
+}
+button {
+  background-color: rgb(28, 179, 226);
+  padding: 18px 20px;
+  color: white;
+  border-radius: 30px;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+}

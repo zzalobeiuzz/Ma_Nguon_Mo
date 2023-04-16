@@ -1,0 +1,53 @@
+* {
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+table {
+  width: 90%;
+  margin: auto;
+  border: 2px solid black;
+  margin-top: 50px;
+  font-size: 18px;
+}
+.id{
+    width: 60px;
+}
+th{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 149, 189);
+    border:2px solid;
+}
+td{
+    border-top: 2px solid;
+    padding: 5px;
+}
+button{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: rgb(134, 199, 255);
+}
+.chinhsua{
+    width: 152px;
+}
+.them{
+    width: 50%;
+    border: 1px solid;
+    text-align: left;
+}
+input,select{
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+}
+#mota{
+    height: 150px;
+}
+.bt{
+    border: none;
+}

@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+.header{
+    padding: 0px 5px;
+    height: 10%;
+}
+
+div.logo{
+    padding: 0px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+img.logo{
+    margin-right: auto;
+    width: 20%;
+    padding: 20px;
+}
+
+.search-bar{
+    margin-right: 50px;
+    background-color:#009999;
+    width: 450px;
+    border-radius: 500px;/*bo tròn góc*/
+    display: flex;
+}
+
+#login,#gio-hang{
+        font-size: 10px 10px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: white;
+}
+
+#search{
+    border: 1px solid #009999;
+    border-radius: 500px;
+    flex-grow: 1;
+    text-align: center;
+    width: 400px;
+    height: 60px;
+    background-color: white;
+    transition-duration: 0.4s;
+    font-size: 20px;
+    font-weight: bold;/*im đậm chữ*/
+    color: #009999;
+}
+
+
+::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #009999;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* chạy trên Internet Explorer 10-11 */
+    color: #009999;
+}
+
+::-ms-input-placeholder { /* chạy trên Microsoft Edge */
+    color: #009999;
+}
+
+li,a{
+    list-style: none;
+    border: 2px ;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu{
+    border-radius: 500px ; /*bo tròn góc textbox*/
+    border: 2px solid ;
+    display: flex; /*xổ dưới dạng hàng ngang*/
+    padding: 10px 10px;
+    padding-left: 150px; /*cách lề trái*/
+}
+
+.menu > li {
+    padding : 0 30px;
+    font-weight: bold; /*im đậm chữ*/
+}
+.kq-text{
+    font-size: 20px;
+    margin-left: 50px;
+    height: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.kq{
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 70px;
+}
+.kq-tk{
+    margin-top: 20px;
+    text-align: center;
+    width: 20%;
+    border: 4px solid rgb(84, 77, 77);
+    border-radius: 10px;
+    margin: 50px 20px;
+}
+.img-kq>img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.footer {
+    border: 1px solid black;
+    height: 250px;
+    background-color: #009999;
+    margin-top: 10px;
+
+  }
+
+
+.login-cartshopping{
+    text-align: center;
+    width: 400px;
+    margin: 0px 30px;
+    display: flex;
+}
+
+.login,.gio-hang{
+    margin-left: 30px;
+}
+
+#login,#gio-hang{
+    border: 2px solid;
+    border-radius: 1000px;
+}
+
+.info{
+    display: flex;
+    justify-content:space-around
+}
+.cot1{
+    width: 200px;
+}
+.cot2{
+    flex:2;
+}
+#facebook,#hotline{
+    font-size: 30px;
+    padding-right: 20px;
+    background-color: #009999;
+    border: none;
+}
+#search-box{
+    font-size: 30px;
+    border: none;
+    background-color:#009999;
+    border-radius: 500px;
+    color: #fff7f7;
+    font-weight: bold;
+}
+#home{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+.content{
+    width: 84%;
+    height: auto;
+    margin-left: 320px;
+    margin-right: 50px; 
+    background-color: rgb(255, 255, 255);
+    border-left:10px solid#009999;
+    /* border-radius: 25px; */
+    padding: 30px 20px;
+}
+.content>p{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(250, 0, 0);
+}
+.best-sp
+{
+    text-align: center;
+    height: auto;
+    /* border: 2px solid; */
+    margin: 20px 10px;
+    width: 22%;
+}
+.best-sp .img-best-sp{
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.best-sp .img-best-sp img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.sp-ban-chay{
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: 70px;
+}
+.info-best-sp>.name{
+    font-size: 17px;
+    font-weight: bold;
+    height: 50px;
+}
+.info-best-sp>.price{
+    font-size: 17px;
+}
+  /* [------------------------------------SLIDE SHOW------------ */
+  * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.mySlides>img{
+    height: 940px;
+    border-radius: 20px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 320px;
+  position: relative;
+  margin: auto;
+  float: left;
+  padding-top: 20px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  /* [--------------------------------------------------------- */
+/* [------------------------------------CSS PHẦN VIEW------------ */
+.container{
+    max-width: 1500px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    height: auto;
+}
+.list-sp{
+    max-width: 300px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 400px;
+    border: 4px solid rgb(84, 77, 77);
+    border-radius: 10px;
+    margin: 50px 20px;
+    
+    
+}
+.list-sp .img-sp{
+    height: 60%;
+    margin-bottom: 10px;
+}
+.list-sp .img-sp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list-sp .info-sp{
+    padding-left:  1em;
+    text-align: center;
+    line-height: 3em;
+    height: 25%;
+}
+
+.list-sp .info-sp p.price{
+    font-size: 15px;
+    height: 30px;
+}
+.list-sp .info-sp p.name{
+    height: 70px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.add-cart button{
+    border: 3px solid rgb(23, 89, 104);
+    border-radius: 10px;
+    /* padding: 1em; */
+    width: 40%;
+    cursor: pointer;
+    margin-top: 17px;
+    font-weight:  bold;
+    position: relative;
+    font-size: 20px;
+    background-color: rgb(39, 212, 207);
+    color: rgb(255, 255, 255);
+}
+
+.add-cart button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: rgb(33, 123, 25);
+    transition: all .5s;
+    margin: 0;
+}
+
+.add-cart button::after{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(62, 244, 46);
+    transition: all.5s;
+}
+.add-cart button:hover::before{
+    width: 30%;
+}
+.add-cart button:hover::after{
+    width: 30%;
+
+}
+/* ----------------------------------------------------------] */
+/* ----------------------------Form đăng kí/ đăng nhập--------------------------- */
+/* .xac-nhan,.dang-ki-nhap{
+    background-color: rgb(219, 247, 6);
+    padding: 0 20px;
+}
+.dang-ki{
+    border: 2px solid;
+}  */
+/* ----------------------------------------------------------] */

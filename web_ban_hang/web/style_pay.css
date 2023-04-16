@@ -1,0 +1,77 @@
+* {
+  margin: 20px 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Times New Roman", Times, serif;
+
+}
+body {
+  margin-left: 50px;
+}
+.boxcenter {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  float: left;
+  display: flex;
+}
+h1{
+    text-align: center;
+}
+th {
+  height: 100px;
+  font-weight: bold;
+  padding: 0 30px;
+  background-color: aqua;
+  border: 2px solid;
+}
+table.don {
+  width: 55%;
+  border: 2px solid;
+  font-size: 18px;
+}
+.don td {
+  border-bottom: 2px solid black;
+}
+.tong {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.thongtin{
+    width: 50%;
+    padding-right: 30px;
+    border: 2px solid black;
+}
+.thongtin_gh {
+  float: right;
+  width: 90%;
+  text-align: left;
+  font-size: 20px;
+
+  padding: 5px;
+  
+}
+.tt{
+    font-size: 23px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.thongtin_gh input,select,button{
+    font-size: 20px;
+    height: 30px;
+    padding-left: 5px;
+}
+.thongtin_gh td{
+    justify-content: center;
+}
+.tong{
+  background-color: rgb(77, 239, 191);
+}
+button{
+  float: right;
+  margin-top: -76px;
+  margin-right: 100px;
+}

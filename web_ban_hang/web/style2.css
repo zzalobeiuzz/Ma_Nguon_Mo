@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: 100px;
+  margin:auto;
+}
+#form-group{
+  border-radius: 300px;
+}
+.form{
+  width: 50%;
+}
+/* input{
+  
+} */
+label{
+  height: 30px;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.form-control{
+  height: 50px;
+  padding: 0;
+  width: 200px;
+  border-width: 5px;
+}
+/* .form-group{
+  width: 300px;
+} */
