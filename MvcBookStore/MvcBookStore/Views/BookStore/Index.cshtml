@@ -1,0 +1,55 @@
+﻿@using MvcBookStore.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<SACH>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<style>
+    p {
+        font-size: 14px;
+        margin-right:25px;
+    }
+</style>
+<h3 style="text-align:center;color:red;font-weight:bold;padding-bottom:20px inherit">SÁCH MỚI</h3>
+<div class="row">
+    @foreach (var sach in Model)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4" style="height: 450px; padding-top: 30px">
+            <div class="thumbnail" style="height:330px">
+                <a href="@Url.Action("Details","BookStore", new {id = sach.Masach})">
+                    <img alt="@sach.Tensach" src="~/images/@sach.Anhbia" style="height:300px" />
+                    <div>
+                        <br />
+                        <h4 style="text-align:center; padding-top:30px; height:70px">
+                            @sach.Tensach
+                        </h4>
+                        <p></p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            15 reviews
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    }
+
+</div>
+@*tạo liên kết các trang*@
+<h5 style="text-align:center; margin-top:40px"> Trang @(Model.PageCount<Model.PageNumber?0:Model.PageNumber)/@Model.PageCount</h5>
+<div class="MenuTrang">
+    @Html.PagedListPager(Model,page=>Url.Action("Index",new { page = page }))
+</div>
+<style>
+    .MenuTrang li{
+        display:inline;
+    }
+</style>

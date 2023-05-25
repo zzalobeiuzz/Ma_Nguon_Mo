@@ -1,0 +1,30 @@
+﻿<link href="~/Content/reset.css" rel="stylesheet" />
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active"> Sign In </h2>
+        <h2 class="inactive underlineHover">Sign Up </h2>
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="~/images/admin.png" id="icon" alt="User Icon" />
+            <h4>Đăng nhập hệ thống quản trị</h4>
+            <h5 style="color:red;text-align:center">@ViewBag.Thongbao</h5>
+        </div>
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true)
+                <!-- Login Form -->
+    <form>
+        <input type="text" class="fadeIn second" name="username" placeholder="username">
+        <input type="text" class="fadeIn third" name="password" placeholder="password">
+        <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+        }
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+            </div>
+
+        </div>
+</div>
